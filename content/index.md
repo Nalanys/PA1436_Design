@@ -6,6 +6,6 @@ Description: This is our index page.
 Home page
 ==========================
 
-The source for this page is in `content/index.md`.
+![Me](image/sofia.jpg)
 
-This is a sample home page written in markdown with some frontmatter defined.
+Mitt namn är Sofia Gimholt. Född i Kiruna men uppväxt i Trosa och nu flyttat ner till Karlskrona för mina studier. Jag började på BTH 2020 på AI-programmet men bytte till Webbprogramering detta år. 

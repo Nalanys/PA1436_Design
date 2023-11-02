@@ -49,8 +49,6 @@ body {
 
 /* Header */
 
-
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -102,6 +100,13 @@ body {
 
 .title p {
     font-style: italic;
+}
+
+/* Content */
+
+.main img {
+    max-width: 25%;
+    border-radius: 50px;
 }
 
 /* Footer */
