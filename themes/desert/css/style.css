@@ -2,7 +2,7 @@
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Josefin+Slab:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 .fa,
 .fas,
 .far,
@@ -6423,19 +6423,135 @@ template {
 }
 
 * {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: arial, sans-serif;
+  line-height: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Josefin Slab", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 0.6em;
+  margin-top: 1em;
 }
 
 body {
   background-color: #F2E2CE;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
-  color: #000;
+  color: #333;
+  box-sizing: border-box;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  flex: 1 0 auto;
+  margin: 0 auto;
+  width: 80%;
+  padding: 2em;
+}
+
+.header, .footer {
+  flex: 0 0 auto;
+}
+
+ol, ul {
+  padding-left: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #734136;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+}
+.site-header .logo {
+  padding: 1em;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  max-width: 30%;
+  margin-right: 2em;
+}
+.site-header .logo img {
+  max-width: 100%;
+  margin: 0;
+}
+.site-header .title {
+  padding: 3em 3em 3em 0;
+}
+@media (max-width: 767px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .site-header .logo, .site-header .title {
+    padding: 1em;
+    margin: 0;
+  }
+  .site-header .logo img {
+    max-width: 100%;
+  }
+  .site-header .title {
+    padding-top: 0;
+  }
+}
+.site-header .title * {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.site-header .title p {
+  font-style: italic;
+}
+
+.nav a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.nav a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 4px solid #734136;
+  background-color: #D9946C;
+  padding: 2em;
+}
+.footer a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}
+.footer div {
+  color: #333;
+}
+.footer .social {
+  font-size: 2rem;
+}
+
+.main img {
+  max-width: 25%;
+  border-radius: 50px;
 }
 
 blockquote {
@@ -6473,14 +6589,178 @@ pre code {
   line-height: 1.4;
 }
 
+.slide {
+  overflow-y: hidden !important;
+  transition: height 0.5s ease-in !important;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 0;
+  list-style: none;
+}
+
+.nav ul li {
+  padding: 0 1em;
+}
+
+.nav a, .nav-toggle {
+  color: #fff;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+  }
+  .nav ul {
+    flex-direction: column;
+    padding-bottom: 1em;
+  }
+  .nav ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav ul li a {
+    display: block;
+    padding: 0.5em 0;
+  }
+  .js .nav-toggle {
+    display: block;
+    float: right;
+    width: 2em;
+    margin: 0.6667em 0;
+    font-size: 1.5rem;
+    line-height: 2em;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+.landing-page {
+  display: grid;
+  gap: 1rem;
+}
+.landing-page h1 {
+  grid-column: span 3;
+}
+.landing-page h3 {
+  text-align: center;
+}
+.landing-page a {
+  text-decoration: none;
+  color: #333;
+  font-family: "Josefin Sans", sans-serif;
+}
+.landing-page .box1 {
+  grid-column: span 1;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.landing-page .box2 {
+  grid-column: span 2;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.landing-page .box3 {
+  grid-column: span 3;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+@media (max-width: 767px) {
+  .landing-page {
+    grid-template-columns: 1fr;
+  }
+  .landing-page h1, .landing-page .box1, .landing-page .box2, .landing-page .box3 {
+    grid-column: span 1;
+  }
+}
+.single-technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tech-menu {
+  width: 15%;
+}
+
+.tech-content {
+  width: 75%;
+}
+
+@media (max-width: 767px) {
+  .tech-menu {
+    display: none;
+  }
+}
+.first-box {
+  box-sizing: content-box;
+  width: 600px;
+  height: 100px;
+  background-color: #231F20;
+}
+
+.second-box {
+  box-sizing: content-box;
+  width: 100%;
+  height: 100px;
+  background-color: #7EBDC2;
+}
+
+.third-box {
+  box-sizing: border-box;
+  width: 50vw;
+  height: 100px;
+  background-color: #BB4430;
+}
+
+.forth-box {
+  /* box-sizing: border-box; */
+  width: 100vw;
+  height: 100px;
+  background-color: #478f65;
+}
+
 .old-fashioned {
-  color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-size: 1em;
+  line-height: 1;
+  color: #383838;
+  width: 1.4;
+  margin-bottom: 1.96rem;
+  margin: 1.96rem auto;
 }
 
 .modern {
-  color: blue;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  line-height: 1;
+  color: #383838;
+  width: 1.4;
+  margin-bottom: 1.96rem;
+  margin: 1.96rem auto;
 }
 
 .worst-ever {
-  color: green;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: -7px;
+  font-size: 1em;
+  line-height: 1;
+  color: #383838;
+  width: 1.4;
+  margin-bottom: 1.96rem;
+  margin: 1.96rem auto;
 }
