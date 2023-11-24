@@ -1,0 +1,76 @@
+@mixin landingPageBox {
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: $accent;
+    border-bottom: $base 4px solid;
+    border-right: $base 4px solid;
+}
+
+.landing-page {
+    display: grid;
+    gap: 1rem;
+
+    h1 {
+        grid-column: span 3;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: $alt-font-color;
+        font-family: $header-font;
+    }
+
+    a:hover {
+        border-bottom: 3px solid $base;
+    }
+
+    .box1 {
+        grid-column: span 1;
+        @include landingPageBox;
+    }
+    
+    .box2 {
+        grid-column: span 2;
+        @include landingPageBox;
+    }
+
+    .box3 {
+        grid-column: span 3;
+        @include landingPageBox;
+    }
+}
+
+@media (max-width: 767px) {
+    .landing-page {
+        grid-template-columns: 1fr;
+
+        h1, .box1, .box2, .box3 {
+            grid-column: span 1;
+        }
+    }
+}
+
+.single-technology {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tech-menu {
+    width: 15%;
+}
+
+.tech-content {
+    width: 75%;
+}
+
+@media (max-width: 767px) {
+    .tech-menu {
+        display: none;
+    }
+}

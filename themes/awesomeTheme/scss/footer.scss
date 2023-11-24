@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 4px solid $muted-dark;
+    background-color: $muted-light;
+    padding: 2em;
+
+    p {
+        font-family: $header-font;
+    }
+
+    a {
+        // color: $muted-dark;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    div {
+        color: $muted-dark;
+    }
+
+    .social {
+        font-size: 2rem;
+    }
+}

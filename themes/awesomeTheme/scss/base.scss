@@ -1,0 +1,37 @@
+body {
+    background-color: $base;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    color: $font-color;
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: $base-light;
+    flex: 1 0 auto;
+    margin: 0 auto;
+    width: 70%;
+    padding: 2em;
+}
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+ol, ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html, body {
+    height: 100%;
+}

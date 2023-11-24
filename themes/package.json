@@ -8,8 +8,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass desert/scss/style.scss desert/css/style.css --no-source-map",
-    "style-min": "sass desert/scss/style.scss desert/css/style.min.css --no-source-map --style compressed"
+    "watch": "sass awesomeTheme/scss/style.scss:awesomeTheme/css/style.css awesomeTheme/scss/style-dark.scss:awesomeTheme/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass awesomeTheme/scss/style.scss:awesomeTheme/css/style.min.css awesomeTheme/scss/style-dark.scss:awesomeTheme/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-dark": "sass awesomeTheme/scss/style-dark.scss awesomeTheme/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass awesomeTheme/scss/style-dark.scss awesomeTheme/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass awesomeTheme/scss/style.scss awesomeTheme/css/style.css --no-source-map",
+    "style-light-min": "sass awesomeTheme/scss/style.scss awesomeTheme/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",
