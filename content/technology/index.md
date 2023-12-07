@@ -8,23 +8,23 @@ Technology page
 ==========================
 
 <div class="box1">
-    <h3><a href="%base_url%?technology/css">CSS</a></h3>
+    <p class="page-btn"><a href="%base_url%?technology/css">CSS</a></p>
 </div>
 <div class="box2">
-    <h3><a href="%base_url%?technology/git">Git</a></h3>
+    <p class="page-btn"><a href="%base_url%?technology/git">Git</a></p>
 </div>
 <div class="box2">
-    <h3><a href="%base_url%?technology/html">HTML</a></h3>
+    <p class="page-btn"><a href="%base_url%?technology/html">HTML</a></p>
 </div>
 <div class="box1">
-    <h3><a href="%base_url%?technology/javascript">JavaScript</a></h3>
+    <p class="page-btn"><a href="%base_url%?technology/javascript">JavaScript</a></p>
 </div>
 <div class="box3">
-    <h3><a href="%base_url%?technology/php">PHP</a></h3>
+    <p class="page-btn"><a href="%base_url%?technology/php">PHP</a></p>
 </div>
 <div class="box1">
-    <h3><a href="%base_url%?technology/python">Python</a></h3>
+    <p class="page-btn"><a href="%base_url%?technology/python">Python</a></p>
 </div>
 <div class="box2">
-    <h3><a href="%base_url%?technology/sqlite">SQLite</a></h3>
+    <p class="page-btn"><a href="%base_url%?technology/sqlite">SQLite</a></p>
 </div>

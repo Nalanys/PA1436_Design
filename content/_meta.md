@@ -1,5 +1,5 @@
 ---
-Logo: image/swirl.png
+Logo: image/circle.png
 Tagline: My portfolio.
 Social:
     - title: Github

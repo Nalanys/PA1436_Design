@@ -66,5 +66,5 @@ A gallery of AI-generated photos of livingrooms inspired by different movies and
 </div>
 
 <div class="embed-container">
-    <iframe src="https://www.youtube.com/embed/xuCn8ux2gbs" frameborder="0" allowfullscreen></iframe>
+    <iframe title="En bra video" src="https://www.youtube.com/embed/xuCn8ux2gbs" frameborder="0" allowfullscreen></iframe>
 </div>
